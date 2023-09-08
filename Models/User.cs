@@ -1,27 +1,48 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using banking_dotnet_api.DTO;
+using System.ComponentModel.DataAnnotations;
 
 namespace banking_dotnet_api.Models
 {
-    public class User
-    {
+    public class User {  
+    
+        public User(UserDTO user)
+        {
+            FirstName = user.FirstName;
+            LastName = user.LastName;
+            Document = user.Document;
+            Password = user.Password;
+            Balance = 0;
+        }
+
+        public User()
+        {
+
+        }
 
         [Key]
         public Guid Id { get; set; }
 
         [Required, MaxLength(50)]
-        private String firstName { get; set; }
+        public String FirstName { get; set; }
 
         [Required, MaxLength(50)]
-        private string lastName { get; set; }
+        public string? LastName { get; set; }
 
         //[Index(IsUnique = true)]\
         [Required]
-        private string document { get; set; }
+        public string? Document { get; set; }
 
         [Required, MaxLength(200)]
-        private string password { get; set; }
+        public string? Password { get; set; }
 
-        private decimal balance { get; set; }
+        public decimal Balance { get; set; }
+
+
+        // -- Navigation property for transactions where this user is the sender
+        public ICollection<Transaction>? SentTransactions { get; set; }
+
+        // -- Navigation property for transactions where this user is the receiver
+        public ICollection<Transaction>? ReceivedTransactions { get; set; }
 
     }
 }
