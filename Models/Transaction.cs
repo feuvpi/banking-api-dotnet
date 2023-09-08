@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace banking_dotnet_api.Models
 {
@@ -6,18 +7,25 @@ namespace banking_dotnet_api.Models
     {
 
         [Key]
-        private Guid id { get; set; }
+        public Guid Id { get; set; }
 
         [Required]
-        private decimal amount { get; set; }
+        public decimal Amount { get; set; }
+
+        
+        public Guid SenderId { get; set; } // Foreign key for Sender
+        [Required]
+        [ForeignKey("SenderId")] // Specify the foreign key name
+        public User Sender { get; set; }
+
+        
+        public Guid ReceiverId { get; set; } // Foreign key for Receiver
 
         [Required]
-        private User sender { get; set; }
+        [ForeignKey("ReceiverId")] // Specify the foreign key name
+        public User Receiver { get; set; }
 
-        [Required]
-        private User receiver { get; set; }
-
-        private DateTime timestamp { get; set; }
+        public DateTime Timestamp { get; set; }
 
     }
 }
