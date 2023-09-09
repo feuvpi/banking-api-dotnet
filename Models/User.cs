@@ -7,8 +7,6 @@ namespace banking_dotnet_api.Models
 {
     public class User {
 
-        private string passwordSalt; // -- Store the salt
-
         public User(UserDTO user)
         {
             FirstName = user.FirstName;
@@ -17,7 +15,6 @@ namespace banking_dotnet_api.Models
             Password = user.Password;
             Balance = 0;
         }
-
         public User()
         {
 
@@ -38,6 +35,8 @@ namespace banking_dotnet_api.Models
 
         [Required, MaxLength(200)]
         public string? Password { get; set; }
+
+        private string passwordSalt; // -- Store the salt
 
         public decimal Balance { get; set; }
         private static RandomNumberGenerator rng = RandomNumberGenerator.Create();
@@ -64,6 +63,17 @@ namespace banking_dotnet_api.Models
                 byte[] hashedByutes = sha256.ComputeHash(passwordBytes);
                 this.Password = Convert.ToBase64String(hashedByutes);
 
+            }
+        }
+
+        public bool VerifyPassword(string password)
+        {
+            using (var sha256 = SHA256.Create())
+            {
+                byte[] passwordBytes = Encoding.UTF8.GetBytes(password + this.passwordSalt);
+                byte[] hashedBytes = sha256.ComputeHash(passwordBytes);
+                string hashedPassword = Convert.ToBase64String(hashedBytes);
+                return hashedPassword.Equals(this.Password);
             }
         }
 
