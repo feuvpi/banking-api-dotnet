@@ -1,6 +1,6 @@
+using banking_dotnet_api.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using AppDbContext = banking_dotnet_api.Data.AppDbContext;
 
 var builder = WebApplication.CreateBuilder(args);
 //builder.Services.AddDbContext<banking_dotnet_apiContext>(options =>
@@ -13,10 +13,20 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+IConfiguration config = new ConfigurationBuilder()
+    .AddJsonFile("appsettings.json")
+    .AddEnvironmentVariables()
+    .AddCommandLine(args)
+    .AddUserSecrets<Program>(true)
+    .Build();
+
+string connectionString = config["ConnectionStrings:DefaultConnection"];
 // Added configuration for PostgreSQL
 var configuration = builder.Configuration;
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
+    options.UseNpgsql(connectionString));
+//builder.Services.AddDbContext<AppDbContext>(options =>
+//    options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
 
 var app = builder.Build();
 
