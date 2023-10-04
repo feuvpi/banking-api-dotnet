@@ -1,10 +1,13 @@
 ﻿using banking_dotnet_api.DTO;
+using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 using System.Security.Cryptography;
+using System.Security.Policy;
 using System.Text;
 
 namespace banking_dotnet_api.Models
 {
+    [Index(nameof(Document), IsUnique = true)]
     public class User {
 
         public User(UserDTO user)
@@ -24,19 +27,18 @@ namespace banking_dotnet_api.Models
         public Guid Id { get; set; }
 
         [Required, MaxLength(50)]
-        public String FirstName { get; set; }
+        public String? FirstName { get; set; }
 
         [Required, MaxLength(50)]
         public string? LastName { get; set; }
 
-        //[Index(IsUnique = true)]\
         [Required]
         public string? Document { get; set; }
 
         [Required, MaxLength(200)]
         public string? Password { get; set; }
 
-        private string passwordSalt; // -- Store the salt
+        private string? passwordSalt; // -- Store the salt
 
         public decimal Balance { get; set; }
         private static RandomNumberGenerator rng = RandomNumberGenerator.Create();
