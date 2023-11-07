@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "A3jecscZW69LetwyvQT6xpQ0IHqzRfE3LOQ9emWTna8KtPjWkUuRcdrmw+4g1xzFxAbk6jQqGUDXOciaFyPU2g==",
+  "dgSpecHash": "AJc7L/tA/IFRMAOOq/3MVDvJon+KIuPLNeAhFSzNTV08VJGaD2dsdJxtnqA1ipl1ETndCiWCzh5tTpSqJhRIyQ==",
   "success": true,
-  "projectFilePath": "M:\\dev\\projects\\dotnet-transactions-api\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Projetos Fred\\fred\\banking-api-dotnet\\Domain\\Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
