@@ -33,7 +33,7 @@ namespace Domain.Interfaces
         /// </summary>
         /// <param name="id">The unique identifier of the entity.</param>
         /// <returns>A task representing the asynchronous operation. The result is the entity with the specified identifier.</returns>
-        Task GetById(int id);
+        Task<T> GetById(Guid id);
 
         /// <summary>
         /// Gets a list of all entities in the data store.
