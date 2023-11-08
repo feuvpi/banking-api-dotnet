@@ -7,9 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Entities\" />
-    <Folder Include="Interfaces\" />
-    <Folder Include="Resources\" />
+    <Compile Remove="Entities\**" />
+    <Compile Remove="Interfaces\**" />
+    <Compile Remove="Resources\**" />
+    <EmbeddedResource Remove="Entities\**" />
+    <EmbeddedResource Remove="Interfaces\**" />
+    <EmbeddedResource Remove="Resources\**" />
+    <None Remove="Entities\**" />
+    <None Remove="Interfaces\**" />
+    <None Remove="Resources\**" />
   </ItemGroup>
 
 </Project>

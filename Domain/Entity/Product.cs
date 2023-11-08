@@ -1,7 +1,7 @@
 ﻿
 namespace Domain.Entity
 {
-    internal class Produto : BaseEntity
+    internal class Product : BaseEntity
     {
         public string Titulo { get; set; }
         public string? Descricao { get; set; }

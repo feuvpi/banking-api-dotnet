@@ -1,6 +1,6 @@
-﻿namespace Domain.Interfaces
+﻿namespace Domain.Interfaces.IServices
 {
-    internal interface IServiceBase<T> : IGeneric<T> where T : class
+    internal interface IBaseService<T> : IGeneric<T> where T : class
     {
     }
 }

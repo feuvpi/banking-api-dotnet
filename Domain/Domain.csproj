@@ -7,10 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Interfaces\" />
-    <Folder Include="Models\" />
-    <Folder Include="Validators\" />
-    <Folder Include="Servies\" />
+    <Compile Remove="Models\**" />
+    <Compile Remove="Servies\**" />
+    <Compile Remove="Validators\**" />
+    <EmbeddedResource Remove="Models\**" />
+    <EmbeddedResource Remove="Servies\**" />
+    <EmbeddedResource Remove="Validators\**" />
+    <None Remove="Models\**" />
+    <None Remove="Servies\**" />
+    <None Remove="Validators\**" />
   </ItemGroup>
 
 </Project>

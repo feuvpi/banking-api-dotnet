@@ -1,8 +1,8 @@
 ﻿using Domain.Entity;
 
-namespace Domain.Interfaces
+namespace Domain.Interfaces.IServices
 {
-    internal interface IUserService : IServiceBase<User>
+    internal interface IUserService : IBaseService<User>
     {
     }
 }

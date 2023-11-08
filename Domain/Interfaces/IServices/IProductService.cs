@@ -1,6 +1,8 @@
-﻿namespace Domain.Interfaces
+﻿using Domain.Entity;
+
+namespace Domain.Interfaces.IServices
 {
-    internal interface IProductService
+    internal interface IProductService : IBaseService<Product>
     {
     }
 }
