@@ -26,7 +26,7 @@ namespace Domain.Interfaces
         /// </summary>
         /// <param name="Entity">The entity to delete.</param>
         /// <returns>A task representing the asynchronous operation.</returns>
-        Task Delete(T Entity);
+        Task Delete(Guid Id);
 
         /// <summary>
         /// Gets an entity by its unique identifier.

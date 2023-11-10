@@ -2,7 +2,7 @@
 
 namespace Domain.Entity
 {
-    internal class BaseEntity
+    public class BaseEntity
     {
         public Guid Id { get; set; }
     }

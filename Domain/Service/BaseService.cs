@@ -49,9 +49,9 @@ namespace Domain.Service
         /// </summary>
         /// <param name="entity">The entity to delete.</param>
         /// <returns>A task representing the asynchronous operation.</returns>
-        public async Task Delete(T entity)
+        public async Task Delete(Guid Id)
         {
-            await _repository.Delete(entity);
+            await _repository.Delete(Id);
         }
 
         /// <summary>

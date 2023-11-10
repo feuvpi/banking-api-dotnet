@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yJzMiMEQFRKDlKWlVAC850OcDP9S3QdApuD4fU2U3ouT5TfobnO6Z2iLnhLBztuOYOMhIdHUi/YE8Pu7wojMbw==",
+  "dgSpecHash": "dU+67MTSgYw/pZUcD5vBI3EBlOtKeMUnIgaYs443MCuOxOVKoTXoE6GYBBJV9NM3qOh+I9XXXjSjxv/GnPJt0A==",
   "success": true,
-  "projectFilePath": "C:\\Projetos Fred\\fred\\banking-api-dotnet\\Infrastructure\\Infrastructure.csproj",
+  "projectFilePath": "M:\\dev\\projects\\banking-api-dotnet\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

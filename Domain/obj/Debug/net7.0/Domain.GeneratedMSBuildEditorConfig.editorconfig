@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Domain
-build_property.ProjectDir = C:\Projetos Fred\fred\banking-api-dotnet\Domain\
+build_property.ProjectDir = M:\dev\projects\banking-api-dotnet\Domain\

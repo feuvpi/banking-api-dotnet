@@ -8,24 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Weblynx04\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Feu's m15 R6\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projetos Fred\\fred\\banking-api-dotnet\\Domain\\Domain.csproj",
+      "projectUniqueName": "M:\\dev\\projects\\banking-api-dotnet\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "C:\\Projetos Fred\\fred\\banking-api-dotnet\\Domain\\Domain.csproj",
-      "packagesPath": "C:\\Users\\Weblynx04\\.nuget\\packages\\",
-      "outputPath": "C:\\Projetos Fred\\fred\\banking-api-dotnet\\Domain\\obj\\",
+      "projectPath": "M:\\dev\\projects\\banking-api-dotnet\\Domain\\Domain.csproj",
+      "packagesPath": "C:\\Users\\Feu's m15 R6\\.nuget\\packages\\",
+      "outputPath": "M:\\dev\\projects\\banking-api-dotnet\\Domain\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Weblynx04\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Feu's m15 R6\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -66,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
