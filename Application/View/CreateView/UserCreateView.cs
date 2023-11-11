@@ -1,4 +1,4 @@
-﻿namespace Application.CreateView
+﻿namespace Application.View.CreateView
 {
     public class UserCreateView : BaseCreateView
     {

@@ -8,14 +8,19 @@
 
   <ItemGroup>
     <Compile Remove="Entities\**" />
-    <Compile Remove="Interfaces\**" />
     <Compile Remove="Resources\**" />
     <EmbeddedResource Remove="Entities\**" />
-    <EmbeddedResource Remove="Interfaces\**" />
     <EmbeddedResource Remove="Resources\**" />
     <None Remove="Entities\**" />
-    <None Remove="Interfaces\**" />
     <None Remove="Resources\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
   </ItemGroup>
 
 </Project>
