@@ -4,10 +4,10 @@ using System.Reflection;
 
 namespace Infrastructure.Context
 {
-    internal class AppContext : DbContext
+    public class BaseContext : Microsoft.EntityFrameworkCore.DbContext
     {
 
-        public AppContext(DbContextOptions<AppContext> options) : base(options) { }
+        public BaseContext(DbContextOptions<BaseContext> options) : base(options) { }
 
         public DbSet<User> Users { get; set; }
 
