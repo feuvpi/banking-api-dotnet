@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "iOednQmPtEwskb8m27Mt+GeFp5UlB7jL4ZoZ+TYC/sQBasxPGh+Ve6mQ6zcjGlQyVZjjTRAbehFKLmXEj0opMw==",
+  "dgSpecHash": "2SPuZ/U8g2inGkG29ITIUjF1GAlodzeMLaj6T1NNRkI7UlV3HXjOp5vZSxCqmo5uT8FGA5BoNsJjcO9Yu1q9Rw==",
   "success": true,
   "projectFilePath": "M:\\dev\\projects\\banking-api-dotnet\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Feu's m15 R6\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.11\\microsoft.entityframeworkcore.7.0.11.nupkg.sha512",
-    "C:\\Users\\Feu's m15 R6\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.11\\microsoft.entityframeworkcore.abstractions.7.0.11.nupkg.sha512",
+    "C:\\Users\\Feu's m15 R6\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.14\\microsoft.entityframeworkcore.abstractions.7.0.14.nupkg.sha512",
     "C:\\Users\\Feu's m15 R6\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.11\\microsoft.entityframeworkcore.analyzers.7.0.11.nupkg.sha512",
     "C:\\Users\\Feu's m15 R6\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.11\\microsoft.entityframeworkcore.relational.7.0.11.nupkg.sha512",
     "C:\\Users\\Feu's m15 R6\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",

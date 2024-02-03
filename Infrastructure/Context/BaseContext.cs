@@ -4,7 +4,7 @@ using System.Reflection;
 
 namespace Infrastructure.Context
 {
-    public class BaseContext : Microsoft.EntityFrameworkCore.DbContext
+    public class BaseContext : DbContext
     {
 
         public BaseContext(DbContextOptions<BaseContext> options) : base(options) { }
@@ -17,6 +17,7 @@ namespace Infrastructure.Context
         {
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
             base.OnModelCreating(modelBuilder);
+
         }
 
     }

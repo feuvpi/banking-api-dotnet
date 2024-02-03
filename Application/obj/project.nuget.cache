@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "El9wful2h6H2D8ebXFMejeTTiYc5oSFSUO4cH66vun8b5TYrOlDu6+2NdJaUmv+DBh2BTM/k+cizMqd52d7/BA==",
+  "dgSpecHash": "d19INGmwhFukcBFrsWXdXFehSBKDrVHh16qyt6nFzirket0O/1Srnn0dXyihInkysTHm1w6Vzx6lrPh0KNIU3A==",
   "success": true,
   "projectFilePath": "M:\\dev\\projects\\banking-api-dotnet\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Feu's m15 R6\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
-    "C:\\Users\\Feu's m15 R6\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+    "C:\\Users\\Feu's m15 R6\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Feu's m15 R6\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.14\\microsoft.entityframeworkcore.abstractions.7.0.14.nupkg.sha512"
   ],
   "logs": []
 }

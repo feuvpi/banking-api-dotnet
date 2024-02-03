@@ -1,13 +1,12 @@
 ﻿
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Security.Cryptography.X509Certificates;
 
 namespace Domain.Entity
 {
     public class User : BaseEntity
     {
         [Column("Name")]
-        public Name Name { get; private set;}
+        public String Name { get; private set;}
         [Column("Email")]
         public string Email { get; set; }
         [Column("Password")]
@@ -18,15 +17,22 @@ namespace Domain.Entity
         public DateTime CreatedAt { get; set; }
     }
 
-    public sealed record Name
-    {
-        public Name(string? value)
-        {
-            ArgumentException.ThrowIfNullOrEmpty(value, nameof(value));
+    //[ComplexType]
+    //[Keyless]
+    //public record Name
+    //{
+    //    public string Value { get; private set; }
+    //}
 
-            Value = value;
-        }
+    //public class Name
+    //{
+    //    public Name(string? value)
+    //    {
+    //        ArgumentException.ThrowIfNullOrEmpty(value, nameof(value));
 
-        public string Value { get; }
-    }
+    //        Value = value;
+    //    }
+
+    //    public string Value { get; }
+    //}
 }
