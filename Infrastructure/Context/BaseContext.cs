@@ -4,7 +4,7 @@ using System.Reflection;
 
 namespace Infrastructure.Context
 {
-    public class BaseContext : DbContext
+    public class BaseContext : IdentityDbContext
     {
 
         public BaseContext(DbContextOptions<BaseContext> options) : base(options) { }
